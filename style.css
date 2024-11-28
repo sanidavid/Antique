@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Freehand&family=Goblin+One&family=Jaini&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Supermercado+One&family=Telex&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Jacquarda+Bastarda+9&family=Lilita+One&family=Megrim&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+HK:wght@200..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Righteous&family=Whisper&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.navbar {
+  background-color: #fdf7f0 !important;
+}
+
+.offcanvas {
+  background-color: #fdf7f0 !important;
+}
+
+body {
+  background-color: #fdf7f0;
+}
+
+.antique-collection {
+  background-color: #fdf7f0;
+  padding: 2rem;
+}
+.antique-collection .title {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: #333;
+  font-family: "Jaini", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.antique-collection .title span {
+  color: #f8b03e;
+}
+.antique-collection .description {
+  font-size: 1rem;
+  color: #666;
+  margin: 1rem 0 2rem;
+}
+.antique-collection .action-buttons .btn-primary {
+  background-color: #f8b03e;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.antique-collection .action-buttons .watch-video {
+  color: #f8b03e;
+  text-decoration: none;
+  font-weight: bold;
+}
+.antique-collection .antique-image {
+  max-width: 100%;
+  height: auto;
+  z-index: 1;
+}
+.antique-collection .stats-list {
+  top: 20%;
+  left: auto;
+  right: -10%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.antique-collection .stats-list li {
+  list-style: none;
+  text-align: left;
+  font-family: monospace;
+}
+.antique-collection .stats-list li span {
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: #f8b03e;
+}
+.antique-collection .stats-list li p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+.antique-collection .search-bar {
+  background-color: #fdf7f0;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
+.antique-collection .search-bar label {
+  font-weight: bold;
+  color: #333;
+}
+.antique-collection .search-bar .form-select {
+  border: 2px solid #f8b03e;
+  border-radius: 5px;
+}
+.antique-collection .search-bar button {
+  background-color: #f8b03e;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+@media (max-width: 768px) {
+  .antique-collection .row {
+    flex-direction: column;
+  }
+  .antique-collection .title {
+    font-size: 2rem;
+  }
+  .antique-collection .description {
+    font-size: 0.9rem;
+  }
+  .antique-collection .antique-image {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .antique-collection .stats-list {
+    position: static;
+    margin-top: 1rem;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .antique-collection .stats-list li {
+    text-align: center;
+  }
+  .antique-collection .search-bar .form-select {
+    margin-bottom: 1.3rem;
+  }
+}
+@media (max-width: 576px) {
+  .antique-collection .title {
+    font-size: 1.8rem;
+  }
+  .antique-collection .stats-list {
+    top: 220px;
+  }
+  .antique-collection .stats-list li span {
+    font-size: 1.6rem;
+  }
+  .antique-collection .action-buttons {
+    flex-direction: row;
+    align-items: center;
+  }
+  .antique-collection .action-buttons .btn-primary {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+  .antique-collection .action-buttons .watch-video {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

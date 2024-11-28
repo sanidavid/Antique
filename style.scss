@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Freehand&family=Goblin+One&family=Jaini&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Rubik+Wet+Paint&family=Supermercado+One&family=Telex&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hanalei+Fill&family=Jacquarda+Bastarda+9&family=Lilita+One&family=Megrim&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+HK:wght@200..900&family=Orbitron:wght@400..900&family=Oswald:wght@200..700&family=Righteous&family=Whisper&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .logo{
+    font-family: "Whisper", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .navbar{
+     background-color: #fdf7f0 !important;
+  }
+
+  .offcanvas{
+    background-color: #fdf7f0 !important;
+  }
+  
+  $primary-color: #f8b03e;
+  $text-color: #333;
+  $secondary-text: #666;
+  $background-highlight: #fdf7f0;
+  
+  body{
+    background-color: $background-highlight;
+  }
+
+  .antique-collection {
+    background-color: $background-highlight;
+    padding: 2rem;
+  
+    .title {
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: $text-color;
+      font-family: "Jaini", system-ui;
+      font-weight: 400;
+      font-style: normal;
+  
+      span {
+        color: $primary-color;
+      }
+    }
+  
+    .description {
+      font-size: 1rem;
+      color: $secondary-text;
+      margin: 1rem 0 2rem;
+    }
+  
+    .action-buttons {
+      .btn-primary {
+        background-color: $primary-color;
+        border: none;
+        padding: 10px 20px;
+        font-weight: bold;
+        border-radius: 5px;
+      }
+  
+      .watch-video {
+        color: $primary-color;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+  
+    .antique-image {
+      max-width: 100%;
+      height: auto;
+      z-index: 1;
+    }
+  
+    .stats-list {
+      top: 20%;
+      left: auto;
+      right: -10%; // Adjusted for better responsiveness
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+  
+      li {
+        list-style: none;
+        text-align: left;
+        font-family: monospace;
+  
+        span {
+          font-size: 2.4rem;
+          font-weight: bold;
+          color: $primary-color;
+        }
+  
+        p {
+          margin: 0;
+          font-size: 0.9rem;
+          color: $text-color;
+        }
+      }
+    }
+  
+    .search-bar {
+      background-color: $background-highlight;
+      border-radius: 10px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+  
+      label {
+        font-weight: bold;
+        color: $text-color;
+      }
+  
+      .form-select {
+        border: 2px solid $primary-color;
+        border-radius: 5px;
+      }
+  
+      button {
+        background-color: $primary-color;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    }
+  
+    // Media Queries for Responsiveness
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+      }
+  
+      .title {
+        font-size: 2rem;
+      }
+  
+      .description {
+        font-size: 0.9rem;
+      }
+  
+      .antique-image {
+        max-width: 80%;
+        margin: 0 auto;
+      }
+  
+      .stats-list {
+        position: static;
+        margin-top: 1rem;
+        flex-direction: row;
+        justify-content: space-around;
+        li {
+          text-align: center;
+        }
+      }
+  
+      .search-bar {
+        .form-select {
+          margin-bottom: 1.3rem;
+        }
+      }
+    }
+  
+    @media (max-width: 576px) {
+      .title {
+        font-size: 1.8rem;
+      }
+  
+      .stats-list{
+        top: 220px;
+      }
+
+      .stats-list li span {
+        font-size: 1.6rem;
+      }
+  
+      .action-buttons {
+        flex-direction: row;
+        align-items: center;
+  
+        .btn-primary {
+          width: 50%;
+          margin-bottom: 1rem;
+        }
+  
+        .watch-video {
+          text-align: center;
+        }
+      }
+
+    }
+  }
+
+  @media (min-width: 1201px) and (max-width: 1600px){
+    // .stats-list{
+    //     position: relative;
+    //     left: 120px;
+    // }
+  }
+  
